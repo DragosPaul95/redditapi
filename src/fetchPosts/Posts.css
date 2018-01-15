@@ -1,0 +1,77 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+.postsWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.thumbnail {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.individualPost {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+}
+.individualPost:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 12px 10px rgba(0,0,0,0.2);
+}
+.postTitle {
+    color: #0231bb;
+    font-weight: bold;
+}
+.score {
+    color: #696969;
+    font-weight: bold;
+}
+.imageWrapper {
+    max-height: 300px;
+    overflow: hidden;
+    width: 100%;
+    align-self: flex-start;
+}
+.cardDetailsContainer {
+    padding: 5px;
+    align-self: flex-end;
+    width: 100%;
+}
+.postDetailsWrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0,0,0, 0.5);
+}
+.postDetailsInner {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 10%;
+    bottom: 10%;
+    margin: auto;
+    background: white;
+    box-shadow: 0 8px 12px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 20px;
+}
+.comment {
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
